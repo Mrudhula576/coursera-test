@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset = "utf-8" >
+<title> Media Queries</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 10px;
+}
+.header{
+    position: absolute;
+    top:-6;
+    right:-6;
+    width:105px;
+    height: 35px;
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px solid black;
+}
+#Chicken, #Beef, #Sushi{
+    font-family: Comic Sans MS;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    background-color: 696969;
+}
+h1 {
+    margin-bottom: 15px;
+    font-family: Comic Sans MS;
+}
+/****************Desktop view****************/
+@media (min-width: 992px) {
+    
+    div#all {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #Chicken {
+        .header{
+          background-color: F08080;  
+        }
+        width: 30%;
+        float: left;
+    }
+
+    #Beef {
+        .header{
+          background-color: 4682B4;  
+        }
+        width: 30%;
+        float: left;
+    }
+
+    #Sushi {
+        .header{
+          background-color: F0E68C;  
+        }
+        width: 30%;
+        float: left;
+    }
+}
+
+/*******************Tablet view********************/
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    
+    div#all {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #Chicken {
+        .header{
+          background-color: F08080;  
+        }
+        width: 48.5%;
+        float: left;
+    }
+
+    #Beef {
+        .header{
+          background-color: 4682B4;  
+        }
+        width: 48.5%;
+        float: right;
+    }
+
+    #Sushi {
+        .header{
+          background-color: F0E68C;  
+        }
+        width: 99%;
+        float: none;
+        clear: both;
+    }
+}
+
+/*******************Mobile view*******************/
+@media (max-width: 767px) {
+    
+    div#all {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #Chicken {
+         .header{
+          background-color: F08080;  
+        }
+        width: 100%;
+    }
+
+    #Beef {
+        .header{
+          background-color: 4682B4;  
+        }
+        width: 100%;
+    }
+
+    #Sushi {
+        .header{
+          background-color: F0E68C;  
+        }
+        width: 100%;
+    }
+}
+
+</style>
+</head>
